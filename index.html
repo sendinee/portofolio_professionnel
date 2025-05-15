@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Correspondant Régional Sécurité Informatique</title>
+  <!-- Font Awesome pour icônes sociales -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' integrity='sha512-pY1iXPaQYhZp6WmA5mZmO6wQlKgR4I1dZ1lT5PiwWw7z9F0B2rJ9eDZK/O9seEuJERuTh9jjIuZ1M+Q07QZ7kw==' crossorigin='anonymous' referrerpolicy='no-referrer' />
+  <style>
+    /* Reset basique */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background: #121212; color: #8A2BE2; }
+    nav { position: fixed; top: 0; width: 100%; background: #000; box-shadow: 0 2px 4px rgba(0,0,0,0.5); z-index: 100; }
+    nav ul { display: flex; justify-content: center; list-style: none; }
+    nav li { margin: 0 1rem; }
+    nav a { text-decoration: none; color: #8A2BE2; padding: 1rem; display: block; }
+    nav a:hover { color: #DA70D6; }
+
+    header {
+      display: flex; align-items: center; justify-content: center;
+      flex-direction: column;
+      height: 80vh; text-align: center;
+      background: #000;
+      color: #DA70D6; position: relative;
+    }
+    header .content { position: relative; z-index:1; }
+    header h1 { font-size: 3rem; margin-bottom: .5rem; color: #8A2BE2; }
+    header p { font-size: 1.2rem; color: #DA70D6; }
+
+    section { padding: 6rem 2rem; max-width: 900px; margin: auto; }
+    section:nth-of-type(even) { background: #1A1A1A; }
+    h2 { font-size: 2rem; margin-bottom: 1.5rem; color: #8A2BE2; }
+
+    /* Services */
+    .services ul { list-style: none; display: grid; grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); gap: 2rem; }
+    .services li { background: #1A1A1A; padding: 1rem; border-left: 5px solid #8A2BE2; color: #DA70D6; }
+    .services li:before { content: '✔️'; margin-right: .5rem; }
+
+    /* Compétences style */
+    .skills-container { display: grid; gap: 1.5rem; }
+    .skill-card { background: #000; padding: 1rem; border-radius: 5px; }
+    .skill-card h3 { color: #DA70D6; margin-bottom: 0.5rem; font-size: 1.1rem; }
+    .progress-bar { width: 100%; height: 1rem; background: #333; border-radius: 5px; overflow: hidden; }
+    .progress { height: 100%; background: #8A2BE2; }
+    .progress-label { display: inline-block; margin-top: 0.5rem; color: #DA70D6; font-weight: bold; }
+
+    /* Experience & Education */
+    .item { margin-bottom: 2rem; }
+    .item strong { display: block; font-size: 1.1rem; margin-bottom: .5rem; color: #8A2BE2; }
+    .item p { color: #DA70D6; }
+
+    /* Interests */
+    .interests p { font-size: 1rem; color: #DA70D6; }
+
+    /* Download */
+    .download-link { text-align: center; margin-top: 2rem; }
+    .download-link a { background: #8A2BE2; color: #121212; padding: .75rem 1.5rem; text-decoration: none; border-radius: 5px; font-weight: bold; }
+    .download-link a:hover { background: #DA70D6; }
+
+    footer { text-align: center; padding: 2rem 1rem; background: #000; color: #8A2BE2; }
+    @media(max-width:600px){ nav ul{flex-direction:column;} header{height:60vh;} }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#about"><i class='fas fa-home'></i> À propos</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#experience">Expériences</a></li>
+      <li><a href="#education">Formations</a></li>
+      <li><a href="#interests">Centres d’intérêt</a></li>
+      <li><a href="#download">CV</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header id="about">
+    <div class="content">
+      <h1>Sendinee Marday</h1>
+      <p>🛡️ Correspondant Régional Sécurité Informatique</p>
+      <p>📧 sendinee.marday05@gmail.com | 📞 07.82.03.62.48 | 🚗 Permis B | 📍 Île-de-France</p>
+    </div>
+  </header>
+  <!-- Images de programmation -->
+  <section class="image-gallery" style="padding:2rem; background:#000;">
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem;">
+      <img src="https://source.unsplash.com/collection/94734566/400x300" alt="Code programmation" style="width:100%; border-radius:5px;" />
+      <img src="https://source.unsplash.com/collection/94734566/401x300" alt="Terminal" style="width:100%; border-radius:5px;" />
+      <img src="https://source.unsplash.com/collection/94734566/402x300" alt="Développement" style="width:100%; border-radius:5px;" />
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h2>⚙️ Services</h2>
+    <ul>
+      <li>Audit de sécurité informatique</li>
+      <li>Mise en place de politiques de cybersécurité</li>
+      <li>Formation et sensibilisation des équipes</li>
+      <li>Veille réglementaire et conformité RGPD</li>
+      <li>Gestion des incidents et plan de continuité</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>💻 Compétences</h2>
+    <div class="skills-container">
+      <div class="skill-card">
+        <h3>HTML & CSS</h3>
+        <div class="progress-bar"><div class="progress" style="width:90%"></div></div>
+        <span class="progress-label">90%</span>
+      </div>
+      <div class="skill-card">
+        <h3>JavaScript</h3>
+        <div class="progress-bar"><div class="progress" style="width:85%"></div></div>
+        <span class="progress-label">85%</span>
+      </div>
+      <div class="skill-card">
+        <h3>Python</h3>
+        <div class="progress-bar"><div class="progress" style="width:80%"></div></div>
+        <span class="progress-label">80%</span>
+      </div>
+      <div class="skill-card">
+        <h3>Gestion de projet</h3>
+        <div class="progress-bar"><div class="progress" style="width:75%"></div></div>
+        <span class="progress-label">75%</span>
+      </div>
+      <div class="skill-card">
+        <h3>Communication client</h3>
+        <div class="progress-bar"><div class="progress" style="width:85%"></div></div>
+        <span class="progress-label">85%</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>🛠️ Expériences Professionnelles</h2>
+    <div class="item"><strong>Développeur Full Stack – FORMASMART (2022)</strong><p>Création de sites web et d'applications</p></div>
+    <div class="item"><strong>Développeur Web – Veesion (2019-2020)</strong><p>Entraînement d’une IA en Python pour vidéos de surveillance</p></div>
+    <div class="item"><strong>Développeur Web – Eurivi Group (2019)</strong><p>Création d'une plateforme pour prestataires et clients</p></div>
+    <div class="item"><strong>Développeur Web – ATOOSURF (2021)</strong><p>Refonte de sites, prospection et communication client</p></div>
+  </section>
+
+  <section id="education">
+    <h2>🎓 Formations</h2>
+    <div class="item"><strong>Master Architecte Logiciel – CFA INSTA (2021-2023)</strong></div>
+    <div class="item"><strong>BTS SIO – CFA INSTA (2020-2021)</strong></div>
+    <div class="item"><strong>Analyste Logiciel – CFA INSTA (2018-2020)</strong></div>
+    <div class="item"><strong>BAC STL – Lycée Liberté (2018)</strong></div>
+  </section>
+
+  <section id="interests">
+    <h2>⚽ Centres d’intérêt</h2>
+    <div class="interests"><p>🥋 Taekwondo | 🤼‍♂️ Judo | 💃 Danse | 🏋️‍♂️ Fitness | 📸 Photographie | 🎵 Musique</p></div>
+  </section>
+
+  <section id="download">
+    <h2>📄 Télécharger le CV</h2>
+    <div class="download-link"><a href="CV_Agent.pdf" download>Télécharger le CV en PDF</a></div>
+  </section>
+  <section id="contact" style="background:#1A1A1A; color:#DA70D6; padding:2rem; text-align:center;">
+    <h2>📞 Contact</h2>
+    <p>📧 <a href="mailto:sendinee.marday05@gmail.com" style="color:#8A2BE2; text-decoration:none;">sendinee.marday05@gmail.com</a> | 📞 07.82.03.62.48</p>
+    <p>🚗 Permis B | 📍 Île-de-France</p>
+    <div style="margin:2rem auto; max-width:600px;">
+      <iframe
+        src="https://www.google.com/maps?q=Cherry+Blossom,+Île-de-France&output=embed"
+        width="100%" height="300" style="border:0; border-radius:5px;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Sendinee Marday — Portfolio professionnel
+  </footer>
+</body>
+</html>
